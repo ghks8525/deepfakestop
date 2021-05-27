@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="listener"
+            type="com.deepfakestop.HomeActivity" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/ah_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text="Deep Fake Stop"
+            android:textColor="@color/blue"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ah_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="딥페이크로 의심되는 영상이나 사진을 가지고 계신가요?\nDFS는 신속하고 정확하게 딥페이크 여부를 판단하는 서비스입니다."
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ah_tv_title" />
+
+        <ImageView
+            android:id="@+id/ah_iv_img"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:src="@drawable/aaaaaaaaa"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ah_tv_content" />
+
+        <Button
+            android:id="@+id/ah_btn_search_file"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="Search File"
+            android:textColor="@color/gra_918f8f"
+            android:textSize="15sp"
+            android:onClick="@{listener::onClick}"
+            android:background="@drawable/bg_rect_full_gray_r10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ah_iv_img" />
+
+
+        <Button
+            android:id="@+id/ah_btn_upload"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Upload"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:onClick="@{listener::onClick}"
+            android:background="@drawable/bg_rect_full_blue_r10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ah_btn_search_file" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

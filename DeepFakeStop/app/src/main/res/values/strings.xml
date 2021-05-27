@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">DeepFakeStop</string>
+    <string name="file_infor">파일 정보 : detect_fake.mp4</string>
+    <string name="file_result"><![CDATA[탐지 결과 : FAKE <font color=\'#2F5597\'>(58/60)</font>]]></string>
+    <string name="your_string_here"><u>통합 신고시스템으로 이동</u>.</string>
+</resources>
